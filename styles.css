@@ -1,0 +1,245 @@
+/* Restablecer global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #292828;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Encabezado */
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 5px solid #1abc9c;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Barra de navegación con botones en la esquina superior derecha */
+.top-nav {
+    position: fixed;
+    top: 3px; /* Ajustado para separarlos más de la parte superior */
+    right: 3px; /* Ajustado para alejar los botones de la derecha */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Aumentado para más separación entre los botones */
+}
+
+/* Opciones para cambiar la posición de los botones */
+.top-nav.center {  /* Para centrarlos */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-nav.left {  /* Para alinearlos a la izquierda */
+    left: 10px;
+    transform: translateX(0);
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav ul li {
+    margin: 3px 0; /* Ajustado para reducir el margen entre los elementos */
+}
+
+.top-nav ul li a {
+    color: #f1f7fd; /* Cambié el color a gris oscuro para que sea más neutro */
+    text-decoration: none;
+    font-size: 0.6rem; /* Ajustado para que los botones sean más pequeños */
+    font-weight: 500;
+    padding: 8px 15px; /* Ajustado para reducir el tamaño de los botones */
+    border-radius: 5px;
+    transition: color 0.3s ease;
+    border: 1px solid hsl(200, 95%, 15%); /* Añadí un borde de color gris oscuro */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.top-nav ul li a:hover {
+    color: #1abc9c; /* Cambié el color al pasar el ratón */
+    border-color: #1abc9c; /* Cambié el borde al pasar el ratón */
+}
+
+/* Navegación */
+nav {
+    background-color: #2c3e50;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Secciones principales */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button i {
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Estilo de la clase hidden */
+.hidden {
+    display: none;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+/* Reflexión final */
+#reflexion {
+    background-color: #ecf0f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+#reflexion h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+#reflexion p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Pie de página */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    #reflexion h2 {
+        font-size: 1.5rem;
+    }
+
+    #reflexion p {
+        font-size: 1rem;
+    }
+}
